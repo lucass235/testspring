@@ -1,20 +1,12 @@
-package com.example.entities;
+package com.example.testspring.entities;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
 import org.springframework.data.annotation.Id;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
+@Data
 @Document(collection = "tb_department")
 public class Department {
 
